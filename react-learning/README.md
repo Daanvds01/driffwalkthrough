@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a POC of a possible walkthrough functionality for the Driff application.
+It was build in React and Redux and will work by following the simple start guide that you can read later on in this readme. 
+
 
 ## Available Scripts
 
