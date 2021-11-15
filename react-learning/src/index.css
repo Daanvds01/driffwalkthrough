@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Zilla Slab", serif;
+  overflow: hidden;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+h2 {
+  font-size: 20px;
+}
+.App {
+  height: 100%;
+}
+Header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.leftheader {
+  background-color: #2e013a;
+  color: white;
+  width: 15%;
+  height: 80px;
+}
+.rightheader {
+  background-color: white;
+  padding-left: 15px;
+}
+.headerrighttitems {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.headerrighttitems ul {
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.MenuLeft {
+  position: relative;
+  float: left;
+  background-color: #63246e;
+  color: white;
+  height: 1080px;
+  width: 15%;
+}
+.Timeline {
+  background-color: #bbbbbb36;
+  width: 50%;
+}
+.DashboardRecentposts {
+  height: 200px;
+}
+.Dashboardteam {
+  background-color: #bbbbbb36;
+  height: 1080px;
+  width: 50%;
+}
+.contentbox {
+  width: 85%;
+  height: 100%;
+}
+.Dashboardcontent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.itemdashboard {
+  background-color: white;
+  margin: 10px;
+  height: 10%;
+}
+.itemdashboardteam {
+  margin: 10px;
+  height: 10%;
+}
+.teamitembox {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+}
+.timelineitembox {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  padding: 24px;
+}
+.Chatwrapper {
+  background-color: #bbbbbb36;
+  width: 100%;
+  height: 1920px;
+  display: flex;
+  flex-direction: row;
+}
+.chatdisplaybox {
+  color: green;
+  width: 70%;
+  background-color: white;
+  margin: 15px;
+  border-radius: 5px;
+}
+.chatmenubox {
+  color: red;
+  width: 30%;
+  background-color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+
+  border-radius: 5px;
+}
+.chatsearchbar {
+  margin: 15px;
+}
+.chatlistitembox {
+  margin: 15px;
+  background-color: rgb(228, 225, 225);
+  height: 5%;
+  border-radius: 5px;
+}
+.Chatlist {
+  height: 100%;
+}
+.chatlistitembox hr {
+  background-color: purple;
+  position: absolute;
+  float: left;
+  height: 11%;
+  margin-left: 1px;
+  width: 5px;
+  border-color: rgba(255, 255, 255, 0);
+}
+.chatlisttext {
+  padding-left: 10px;
+}
+.chatlistitembox1 {
+  margin: 15px;
+  background-color: rgb(228, 225, 225);
+  height: 5%;
+  border-radius: 5px;
+  border: solid 2px purple;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #63246e;
+  color: #fff;
+  width: 120px;
+  height: 300px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.walkthroughbutton {
+  background-color: #7a1b8b;
+  border: none;
+  width: 60px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: white;
+}
+.walkthroughbuttonback {
+  background-color: #7a1b8b;
+  border: none;
+  width: 77px;
+  height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+}
+.walkthroughbuttonnext {
+  background-color: #7a1b8b;
+  border: none;
+  width: 77px;
+  height: 20px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: white;
+}
+.dashboardwelcometext {
+  padding: 10px;
+}
+#walkthroughtext {
+  color: #505050;
+  padding: 1rem;
+  font-size: 0.853rem;
+  line-height: 1.5rem;
+}
+
+.walkthroughposition1 {
+  position: absolute;
+  border: solid 1px #2e013a;
+  background-color: white;
+  width: 300px;
+  height: 400px;
+  top: 100px;
+  left: 680px;
+
+  border-radius: 5px;
+  color: white;
+}
+.walkthroughposition1 span {
+  background-color: #2e013a;
+  border-color: #2e013a;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+  color: white;
+  border-radius: 0.25rem;
+}
+.walkthroughposition2 {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  border: solid 1px #2e013a;
+  height: 390px;
+  top: 100px;
+  left: 960px;
+  border-radius: 5px;
+  color: white;
+}
+.walkthroughposition2 span {
+  background-color: #2e013a;
+  border-color: #2e013a;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+  color: white;
+  border-radius: 0.25rem;
+}
+.walkthroughposition3 {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  border: solid 1px #2e013a;
+  height: 290px;
+  top: 100px;
+  left: 570px;
+  border-radius: 5px;
+  color: white;
+}
+.walkthroughposition3 span {
+  background-color: #2e013a;
+  border-color: #2e013a;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+  color: white;
+  border-radius: 0.25rem;
+}
+.walkthroughposition4 {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  height: 365px;
+  border: solid 1px #2e013a;
+  top: 100px;
+  left: 650px;
+  border-radius: 5px;
+  color: white;
+}
+.walkthroughposition4 span {
+  background-color: #2e013a;
+  border-color: #2e013a;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+  color: white;
+  border-radius: 0.25rem;
+}
+.walkthroughposition5 {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  border: solid 1px #2e013a;
+  height: 390px;
+  top: 100px;
+  left: 300px;
+  border-radius: 5px;
+  color: white;
+}
+.walkthroughposition5 span {
+  background-color: #2e013a;
+  border-color: #2e013a;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+  color: white;
+  border-radius: 0.25rem;
+}
+.grayfilter {
+  background-color: rgb(54, 54, 54);
+  z-index: 10;
+  width: 1920px;
+  height: 1920px;
+  opacity: 0.6;
+  position: absolute;
+}
+.walkthroughindex {
+  z-index: 11;
+}
+
+#stage1.App .Timeline {
+  z-index: 11;
+  border: solid 2px #2e013a;
+}
+#stage2.App .Dashboardteam {
+  z-index: 11;
+  border: solid 2px #2e013a;
+}
+#stage3.App .chatmenubox {
+  z-index: 11;
+  border: solid 2px #2e013a;
+}
+#stage4.App .chatdisplaybox {
+  z-index: 11;
+  border: solid 2px #2e013a;
+}
+#walkthroughimage {
+  width: 100px;
+  height: 110px;
+}
+.walkimagebox {
+  display: flex;
+
+  justify-content: center;
+}
