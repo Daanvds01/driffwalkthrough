@@ -8,7 +8,7 @@ function Chat() {
     <div className="Chatwrapper">
       <Chatmenu />
       <Chatdisplay />
-      <Walkthrough title="Chat" />
+      {/* <Walkthrough title="Chat" /> */}
     </div>
   );
 }

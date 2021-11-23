@@ -13,3 +13,13 @@ export const gettext = () => {
     type: "GET_TEXT",
   };
 };
+export const popupactive = () => {
+  return {
+    type: "ACTIVATION"
+  }
+}
+export const popupnonactive = () => {
+  return {
+    type: "NONACTIVE"
+  }
+}

@@ -10,7 +10,7 @@ function Dashboard() {
       <Timeline />
       <Dashboardteam />
       <DashboardRecentPosts />
-      <Walkthrough title="Dashboard" />
+      {/* <Walkthrough title="Dashboard" /> */}
     </div>
   );
 }

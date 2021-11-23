@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import MenuLeft from "./components/MenuLeft";
 import Dashboard from "./components/Dashboard";
 import Chat from "./components/Chat";
+import Videopopup from "./components/Videopopup"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -12,9 +13,10 @@ const App = () => {
   return (
     <Router>
       <div id={elementshown[counter].idName} className="App">
-        <div className="grayfilter"></div>
+        {/* <div className="grayfilter"></div> */}
         <Header />
         <MenuLeft />
+        <Videopopup/>
         <div className="contentbox">
           <Switch>
             <Route path="/" exact component={Dashboard} />
