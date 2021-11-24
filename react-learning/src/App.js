@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import MenuLeft from "./components/MenuLeft";
 import Dashboard from "./components/Dashboard";
 import Chat from "./components/Chat";
-import Videopopup from "./components/Videopopup"
+import Videopopup from "./components/Videopopup";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -10,13 +10,15 @@ import { useSelector, useDispatch } from "react-redux";
 const App = () => {
   const elementshown = useSelector((state) => state.textdisplay);
   const counter = useSelector((state) => state.counter);
+  const showingpop = useSelector((state) => state.popupactivation);
   return (
     <Router>
       <div id={elementshown[counter].idName} className="App">
         {/* <div className="grayfilter"></div> */}
         <Header />
         <MenuLeft />
-        <Videopopup/>
+        {showingpop ? <Videopopup /> : null}
+
         <div className="contentbox">
           <Switch>
             <Route path="/" exact component={Dashboard} />

@@ -1,25 +1,26 @@
-import React from 'react'
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { popupactive, popupnonactive } from "../actions";
-import popupvideo from '../reducers/popupvideo';
+import popupvideo from "../reducers/popupvideo";
 
-function MenuLeftStatic() {
-    const dispatch = useDispatch();
-   
-    function popupactivate() {
-        dispatch(popupactive());
-        console.log(popupactive);
+function MenuLeftStatic(props) {
+  const dispatch = useDispatch();
 
-      }
-    return (
-        <div>
-            <div className="FavoriteWSpace">Favorite Workspace</div>
-            <div className="FavoriteWSpaceText">Add your favorite WorkSpaces here!</div>
-            <div className="StartBrowsingText">Start browsing...</div>
-            <div className="Videobutton"  onClick={popupactivate}><button id="videobtn">Get driff here</button></div>
-        </div>
-    
-    )
+  function popupactivate() {
+    dispatch(popupactive());
+  }
+  return (
+    <div>
+      <div className="FavoriteWSpace">Favorite Workspace</div>
+      <div className="FavoriteWSpaceText">
+        Add your favorite WorkSpaces here!
+      </div>
+      <div className="StartBrowsingText">Start browsing...</div>
+      <div className="Videobutton" onClick={popupactivate}>
+        <button id="videobtn">Get driff here</button>
+      </div>
+    </div>
+  );
 }
 
-export default MenuLeftStatic
+export default MenuLeftStatic;

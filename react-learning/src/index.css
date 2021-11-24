@@ -42,7 +42,7 @@ Header {
 .MenuLeft {
   position: relative;
   float: left;
-  background-color: #63246e;
+  background-color: #4d075a;
   color: white;
   height: 1080px;
   width: 15%;
@@ -358,17 +358,43 @@ Header {
   display: flex;
   flex-direction: column;
   left: 25%;
-  width: 1000px;
-  height: 700px;
+  width: 900px;
+  height: 600px;
   background-color: rgb(59, 59, 59);
   border-radius: 5px;
 }
 .driffvideo {
-  margin-top: 15%;
-  margin-left: 25%;
+  margin-top: 8%;
+  margin-left: 15%;
 }
 .popupbar {
   width: 100%;
   height: 30px;
   background-color: gray;
+}
+#videobtn {
+  background-color: #71397b;
+  color: white;
+  font-size: 14px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0.5rem;
+  justify-content: center;
+}
+#closebtn {
+  float: right;
+  background-color: #71397b;
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  width: 80px;
+  border-radius: 0.2rem;
+}
+.popupbtn {
+  float: right;
+}
+.purchasepop {
+  color: white;
 }
