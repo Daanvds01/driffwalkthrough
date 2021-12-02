@@ -22,6 +22,9 @@ const Header = (props) => {
           <ul>Reminders</ul>
           <ul>Files</ul>
           <ul>People</ul>
+          <Link style={navStyle} to="/Datadisplay">
+            <ul>Popup Data</ul>
+          </Link>
         </div>
       </div>
     </header>
