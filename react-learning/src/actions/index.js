@@ -23,3 +23,8 @@ export const popupnonactive = () => {
     type: "NONACTIVE"
   }
 }
+export const popupswitch = () => {
+  return {
+    type: "SWITCH_POP"
+  }
+}

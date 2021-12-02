@@ -10,6 +10,7 @@ import * as fs from "fs";
 import { gettext } from "./actions";
 import Datadisplay from "./components/Datadisplay";
 
+
 const App = () => {
   const elementshown = useSelector((state) => state.textdisplay);
   const counter = useSelector((state) => state.counter);
@@ -28,6 +29,9 @@ const App = () => {
   // let data = JSON.stringify(sendingdata1);
   // fs.writeFileSync("data-2.json", data);
 
+ 
+
+ 
   return (
     <Router>
       <div id={elementshown[counter].idName} className="App">
@@ -50,6 +54,29 @@ const App = () => {
 };
 
 export default App;
+
+ // const testdata = {
+  //   name: 'Daan',
+  //   Role: 'admin',
+  //   group: 'testgroup',
+  // };
+  
+  // const fs = require('fs')
+  
+  // const saveData = (testdata) =>{
+  //   const finishedfunction = (error) =>{
+  //     if(error){
+  //       console.error(error)
+  //       return;
+  //     }
+  //   }
+
+  //   const jsonData = JSON.stringify(testdata)
+  //   fs.writeFile('dataexport.json',jsonData,finishedfunction)
+  // }
+
+  // saveData(testdata);
+  
 
 // const [textwalkthrough, setTextwalkthrough] = useState([
 //   { id: 1, text: "text1" },

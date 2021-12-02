@@ -2,23 +2,26 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../actions";
 import { popupactive, popupnonactive } from "../actions";
+import { popupswitch } from "../actions";
+import Purchasepop from "./Purchasepop";
+import Popupvideo from "./Popupvideo";
 
 const Videopopup = () => {
+  const popswitch = useSelector((state) => state.popupswitching);
   const dispatch = useDispatch();
-  const displayvid = "null";
-  const displaypurch = "none";
-  console.log(displayvid);
-  console.log(displaypurch);
+ 
   function popupactivate() {
     dispatch(popupactive());
+    console.log(popswitch);
+  }
+  function popupchange(){
+    dispatch(popupswitch());
+    console.log(popswitch);
   }
 
-  function popupstatus() {
-    const displayvid = "none";
-    const displaypurch = "null";
-    console.log(displayvid);
-    console.log(displaypurch);
-  }
+
+
+ 
   return (
     <div className="popupcontainer">
       <span className="popupbar">
@@ -26,20 +29,13 @@ const Videopopup = () => {
           close
         </button>
       </span>
+     
       <div className="popupcontentbox">
-        <div style={{ display: displayvid }} className="driffvideo">
-          <iframe
-            width="620"
-            height="415"
-            src="https://www.youtube.com/embed/p2cCvi6y2jg?controls=0"
-          ></iframe>
-        </div>
-        <div style={{ display: displaypurch }} className="purchasepop">
-          purchase option
-        </div>
+        
+      {popswitch ? <Purchasepop/> : <Popupvideo/>}
       </div>
       <div className="popupbtn">
-        <button onClick={popupstatus} id="closebtn">
+        <button onClick={popupchange} id="closebtn">
           Next
         </button>
       </div>
