@@ -398,3 +398,12 @@ Header {
 .purchasepop {
   color: white;
 }
+.datareadbox {
+  background-color: rgb(54, 54, 54);
+  margin: 20px;
+  padding: 10px;
+  color: white;
+}
+.datadisplay {
+  display: flex;
+}

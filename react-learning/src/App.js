@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import * as fs from "fs";
 import { gettext } from "./actions";
 import Datadisplay from "./components/Datadisplay";
+import {ThemeProvider} from "styled-components"
 
 
 const App = () => {
@@ -16,6 +17,13 @@ const App = () => {
   const counter = useSelector((state) => state.counter);
   const showingpop = useSelector((state) => state.popupactivation);
 
+  const theme = { 
+    colors: {
+      header: '#ebfbff', //#323ea8
+      body: '#329ea8',
+      footer: '#003333'
+    }
+  }
   // const fs = require("fs");
 
   // let sendingdata1 = {
@@ -33,9 +41,12 @@ const App = () => {
 
  
   return (
+    <ThemeProvider theme={theme}>
     <Router>
+      
       <div id={elementshown[counter].idName} className="App">
         {/* <div className="grayfilter"></div> */}
+       
         <Header />
         <MenuLeft />
         {showingpop ? <Videopopup /> : null}
@@ -49,7 +60,9 @@ const App = () => {
           </Switch>
         </div>
       </div>
+      
     </Router>
+    </ThemeProvider>
   );
 };
 
